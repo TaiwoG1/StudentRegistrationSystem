@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0922C5"
+    tools:context=".lookUpClass">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="365dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#020037"
+        android:text="Look up Class"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <SearchView
+        android:id="@+id/searchView1"
+        android:layout_width="270dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="#FFFFFF"
+        android:contextClickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Class"
+        android:textColorHint="#FFFFFF"
+        android:tint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="264dp"
+            android:layout_height="83dp"
+            android:layout_weight="1"
+            android:text="TextView" />
+    </SearchView>
+
+    <ScrollView
+        android:layout_width="386dp"
+        android:layout_height="698dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textAlignment="viewStart">
+
+            <TextView
+                android:id="@+id/allCourses"
+                android:layout_width="match_parent"
+                android:layout_height="690dp"
+                android:text="TextView"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

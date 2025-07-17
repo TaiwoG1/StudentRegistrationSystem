@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0922C5"
+    tools:context=".MainActivity3">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/activeReg"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:background="#020037"
+        android:text="Active Registration"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/regHistory"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:background="#020037"
+        android:text="Registration History"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activeReg" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gpa"
+        android:layout_width="200dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="200dp"
+        android:background="#020037"
+        android:text="GPA"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regHistory"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="365dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:background="#020037"
+        android:text="Academic Progress"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
